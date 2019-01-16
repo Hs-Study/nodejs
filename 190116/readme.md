@@ -230,9 +230,9 @@ app.listen(3000, function(){ //3000번 포트를 사용합니다.
 ejs 는  Express 의 View 엔진중 하나이며, 다른 View 엔진들로는 pug, nunjucks 가 있다.
 
 
+<hr>
 
 #### References
-<hr>
 
 [https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World](https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World)
 
