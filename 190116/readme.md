@@ -4,13 +4,14 @@
 
 ## 1. Hello Node.js
 
-#### HTTP Methods 개념 확인하기(GET, POST, PUT, DELETE)
+### HTTP Methods 개념 확인하기(GET, POST, PUT, DELETE)
 
 [https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World/HTTP-Methods-HTTP-Verbs-GET-POST-PUT-PATCH-DELETE](https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World/HTTP-Methods-HTTP-Verbs-GET-POST-PUT-PATCH-DELETE)
 
 
 
-#### Express 로 서버 실행하기
+
+### Express 로 서버 실행하기
 
 1.<br>작업 디렉토리(workspace) 생성하기<br>웹스톰에서 해당 디렉토리 오픈 후 View - Tool Windows - Terminal 실행 // 하단에 터미널 창이 생성된다. 
 
@@ -91,7 +92,9 @@ Is this OK? (yes)
 
 
 
+
 4.<br>entry point 로 지정된 파일 생성하기. <br>여기서는 `/helloworld` 디렉토리에 `index.js` 파일을 생성하면 된다. 
+
 
 
 
@@ -104,6 +107,8 @@ Is this OK? (yes)
 > express 패키지를 설치하는 명령어로, 패키지를 설치할 때는 `package.json` 파일이 있는 곳에서 진행을 해야한다.
 >
 >  `package.json` 에 변화가 생기며, `package-lock.json` 파일이 생성된다. 또한 `node_modules` 라는 폴더가 생성된다. 그리고 이 폴더 안에는 `express` 뿐만 아리다 다른 여러 패키지들까지 포함되어 있다. 이는 `express` 가 사용하고 있는 package 이기도 하며, `express` 가 사용하고 있는 package 가 사용하고 있는 package 이기도 하다.  
+
+
 
 
 
@@ -169,6 +174,8 @@ app.listen(3000, function(){ //3000번 포트를 사용합니다.
 
 <img alt="2019-01-16 10 00 13" src="https://user-images.githubusercontent.com/13485924/51250599-35577600-19da-11e9-9ebd-84e5ee2bea5d.png" width="70%" height="70%">
 
+
+
 8.<br>응용하기
 
 ```javascript
@@ -190,19 +197,22 @@ app.listen(3000, function(){ //3000번 포트를 사용합니다.
 
 
 
+
 9.<br>Github 에 소스코드 업로드 관련.
 
 공개되어서는 안되는 정보를 담고있는 파일들과 굳이 올릴 필요가 없는 파일들이 있을 것이다. `.gitignore` 파일을 통해 설정가능하며,  `node_modules` 라는 폴더가 굳이 올릴필요가 없는 것중에 하나이다. 이는 여기에 들어있는 모듈(패키지)들은 `pacakage.json` 에 모두 기록이 되어 있기 때문에, 추후 `npm install` 명령어만을 통해서 이 패키지가 의존하고 있는 모듈들을 손쉽게 설치할 수 있다.
 
 
 
-#### Static(정적) Site, Dynamic(동적) Site 개념 확인하기
+
+### Static(정적) Site, Dynamic(동적) Site 개념 확인하기
 
 [https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World/Static-정적-Site-Dynamic-동적-Site](https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World/Static-정적-Site-Dynamic-동적-Site)
 
 
 
-#### Static 폴더 추가하기
+
+### Static 폴더 추가하기
 
 [https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World/Static-폴더-추가하기](https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World/Static-폴더-추가하기)
 
@@ -210,7 +220,8 @@ app.listen(3000, function(){ //3000번 포트를 사용합니다.
 
 
 
-#### ejs로 Dynamic Website 만들기
+
+### ejs로 Dynamic Website 만들기
 
 [https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World/EJS로-Dynamic-Website-만들기](https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World/EJS로-Dynamic-Website-만들기)
 
@@ -220,9 +231,10 @@ ejs 는  Express 의 View 엔진중 하나이며, 다른 View 엔진들로는 pu
 
 
 
+#### References
+<hr>
 
+[https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World](https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World)
 
-참고 : [https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World](https://www.a-mean-blog.com/ko/blog/Node-JS-첫걸음/Hello-World)
-
-참고 : [https://www.zerocho.com/category/NodeJS/post/58285e4840a6d700184ebd87](https://www.zerocho.com/category/NodeJS/post/58285e4840a6d700184ebd87)
+[https://www.zerocho.com/category/NodeJS/post/58285e4840a6d700184ebd87](https://www.zerocho.com/category/NodeJS/post/58285e4840a6d700184ebd87)
 
