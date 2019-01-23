@@ -230,6 +230,24 @@ app.listen(3000, function(){ //3000번 포트를 사용합니다.
 ejs 는  Express 의 View 엔진중 하나이며, 다른 View 엔진들로는 pug, nunjucks 가 있다.
 
 
+
+```javascript
+// 2
+app.get("/hello", function(req,res){
+ res.render("hello", {name:req.query.nameQuery});
+}); 
+
+// 3
+app.get("/hello/:nameParam", function(req,res){ 
+ res.render("hello", {name:req.params.nameParam});
+});
+```
+
+> `req.query.nameQuery` 와 `req.params.nameParam` 의 차이 이해하기.<br> `localhost:3000/hello?nameQuery=Mike` 를 브라우저에 입력하면, `req.query.nameQuery` 에는 `Mike` 란 문자열이 저장되어 있다. <br>`localhost:3000/hello/Jane`  을 브라우저에 입력하면, `req.params.nameParam` 에는  `Jane` 이란 문자열이 저장되게 된다. <br>또한, 왜 `nameQuery` 와 `nameParam` 이란 이름으로 위의 문자열들이 저장되는지 생각해보기<br>
+
+
+
+
 <hr>
 
 #### References
